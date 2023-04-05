@@ -38,6 +38,7 @@ jobs:
         
     - name: Build docker image
       env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         echo "Construyendo imagen de docker"
@@ -46,6 +47,7 @@ jobs:
         
     - name: Push docker image
       env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         echo "Publicando imagen de docker"
