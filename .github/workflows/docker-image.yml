@@ -31,11 +31,13 @@ jobs:
       run: |
         echo "Construyendo imagen de docker"
         docker build -t gcanosa/docker-graphql:0.0.1 .
+        docker build -t gcanosa/docker-graphql .
     
     - name: Push docker image
       run: |
         echo "Publicando imagen de docker"
         docker push gcanosa/docker-graphql:0.0.1
+        docker push gcanosa/docker-graphql
       
 #   - name: Build the Docker image
 #     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
