@@ -7,11 +7,11 @@ import { StatusArgs } from './dto/args/status.args';
 export class TodoService {
 
     private todos: Todo[] = [
-        { id: 1, description: 'Piedra del Alma', done: false },
-        { id: 2, description: 'Piedra del Espacio', done: true },
-        { id: 3, description: 'Piedra del Poder', done: false },
-        { id: 4, description: 'Piedra del Tiempo', done: false },
-        { id: 5, description: 'Piedra desde el contenedor', done: true },
+        { id: 1, description: 'Asereje', done: false },
+        { id: 2, description: 'Ja', done: true },
+        { id: 3, description: 'Deje', done: false },
+        { id: 4, description: 'Dejebe tu dejebe', done: false },
+        { id: 5, description: 'Sevi nouba', done: true },
     ];
 
     get totalTodos() {
